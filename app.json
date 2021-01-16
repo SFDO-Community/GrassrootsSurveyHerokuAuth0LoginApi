@@ -1,0 +1,26 @@
+{
+  "name": "Login API for Grass Roots Survey Mobile App",
+  "description": "Login API for Grass Roots Survey Mobile App", 
+  "repository": "https://github.com/SFDO-Community-Sprints/GrassRootsSurveyHerokuAuth0LoginApi",
+  "env": {
+    "SALESFORCE_LOGIN_URL": {
+      "description": "Salesforce Login URL.",
+      "value": "https://login.salesforce.com"
+    },
+    "SALESFORCE_CDW_USERNAME": {
+      "description": "Username of a Salesforce integration user.",
+      "value": "cdw@example.com"
+    },
+    "SALESFORCE_CDW_PASSWORD": {
+      "description": "Password of a Salesforce integration user.",
+      "value": "password"
+    },
+    "SALESFORCE_CDW_TOKEN": {
+      "description": "Security token of a Salesforce integration user.",
+      "value": "abcdefg"
+    }
+  },
+  "addons": [
+    "auth0:free"
+  ]
+}

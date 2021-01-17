@@ -21,6 +21,12 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
 app.post('/login', async (req, res, next) => {
+  if (!req.body || !req.body.email || !req.body.password) {
+    res.status(401).send({
+      "error": "missing_required_fields",
+      "error_description": "email or password is not specified, or invalid format."
+    });
+  }
   try {
     await auth0.oauth.passwordGrant({
       username: req.body.email,
@@ -29,26 +35,32 @@ app.post('/login', async (req, res, next) => {
     });
     await createSalesforceConnection(res);
   } catch (error) {
+    console.log(error);
+    // Auth0 throws an error as follows.
+    // error = { statusCode: 401, message: '{"error":"invalid_grant", "error_description":"Wrong email or password." }'
     const message = JSON.parse(error.message);
     res.status(error.statusCode).send(message);
   } 
 })
 
 async function createSalesforceConnection(res) {
-  const conn = new jsforce.Connection({
-    loginUrl: process.env.SALESFORCE_LOGIN_URL
-  });
-  const salesforceResult = await conn.login(
-    process.env.SALESFORCE_CDW_USERNAME,
-    process.env.SALESFORCE_CDW_PASSWORD + process.env.SALESFORCE_CDW_TOKEN
-  );
-  if(!salesforceResult){
-    res.status(401).send('Invalid integration username, password, security token; or user locked out.');
-  } else {
+  try {
+    const conn = new jsforce.Connection({
+      loginUrl: process.env.SALESFORCE_LOGIN_URL
+    });
+    await conn.login(
+      process.env.SALESFORCE_CDW_USERNAME,
+      process.env.SALESFORCE_CDW_PASSWORD + process.env.SALESFORCE_CDW_TOKEN
+    );
     const response = {
       "access_token": conn.accessToken,
       "instance_url": conn.instanceUrl,
     };
     res.send(response);
+  } catch (e) {
+    return Promise.reject({
+      statusCode: 403,
+      message: `{"error":"invalid_salesforce_connection", "error_description":"${e.message}"}`,
+    });
   }
 }

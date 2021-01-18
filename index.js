@@ -49,8 +49,8 @@ async function createSalesforceConnection(res) {
       loginUrl: process.env.SALESFORCE_LOGIN_URL
     });
     await conn.login(
-      process.env.SALESFORCE_CDW_USERNAME,
-      process.env.SALESFORCE_CDW_PASSWORD + process.env.SALESFORCE_CDW_TOKEN
+      process.env.SALESFORCE_INTEGRATION_USERNAME,
+      process.env.SALESFORCE_INTEGRATION_PASSWORD + process.env.SALESFORCE_INTEGRATION_TOKEN
     );
     const response = {
       "access_token": conn.accessToken,

@@ -7,15 +7,15 @@
       "description": "Salesforce Login URL.",
       "value": "https://login.salesforce.com"
     },
-    "SALESFORCE_CDW_USERNAME": {
+    "SALESFORCE_INTEGRATION_USERNAME": {
       "description": "Username of a Salesforce integration user.",
-      "value": "cdw@example.com"
+      "value": "api@example.com"
     },
-    "SALESFORCE_CDW_PASSWORD": {
+    "SALESFORCE_INTEGRATION_PASSWORD": {
       "description": "Password of a Salesforce integration user.",
       "value": "password"
     },
-    "SALESFORCE_CDW_TOKEN": {
+    "SALESFORCE_INTEGRATION_TOKEN": {
       "description": "Security token of a Salesforce integration user.",
       "value": "abcdefg"
     }

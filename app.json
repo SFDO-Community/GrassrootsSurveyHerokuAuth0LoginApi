@@ -17,7 +17,8 @@
     },
     "SALESFORCE_INTEGRATION_TOKEN": {
       "description": "Security token of a Salesforce integration user.",
-      "value": "abcdefg"
+      "value": "abcdefg",
+      "required": false
     }
   },
   "addons": [

@@ -1,5 +1,5 @@
-# Login API for Grass Roots Survey Mobile App
-Visit [our wiki](https://github.com/SFDO-Community-Sprints/GrassRootsSurveyMobileApp/wiki) for the project details and further setup instructions.
+# Login API for Grass Roots Mobile Survey App
+Visit [our wiki](https://github.com/SFDO-Community-Sprints/GrassRootsMobileSurveyApp/wiki) for the project details and further setup instructions.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 

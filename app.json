@@ -1,6 +1,6 @@
 {
-  "name": "Login API for Grass Roots Survey Mobile App",
-  "description": "Login API for Grass Roots Survey Mobile App", 
+  "name": "Login API for Grass Roots Mobile Survey App",
+  "description": "Login API for Grass Roots Mobile Survey App", 
   "repository": "https://github.com/SFDO-Community-Sprints/GrassRootsSurveyHerokuAuth0LoginApi",
   "env": {
     "SALESFORCE_LOGIN_URL": {

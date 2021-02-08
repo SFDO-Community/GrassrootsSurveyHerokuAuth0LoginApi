@@ -3,6 +3,9 @@ Visit [our wiki](https://github.com/SFDO-Community-Sprints/GrassRootsMobileSurve
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
+For further information on the projects Salesforce package see repo: https://github.com/SFDO-Community-Sprints/GrassRootsSurveySalesforcePackage
+For further information on the projects mobile app see repo: https://github.com/SFDO-Community-Sprints/GrassRootsMobileSurveyApp
+
 ## Setup
 1. Deploy this app to Heroku using above button.
 2. Open Auth0 app and enable [Password] authentication type at advanced settings section. Then add your users.

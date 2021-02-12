@@ -3,8 +3,10 @@ Visit [our wiki](https://github.com/SFDO-Community-Sprints/GrassRootsMobileSurve
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-For further information on the projects Salesforce package see repo: https://github.com/SFDO-Community-Sprints/GrassRootsSurveySalesforcePackage
-For further information on the projects mobile app see repo: https://github.com/SFDO-Community-Sprints/GrassRootsMobileSurveyApp
+For further information on the projects Salesforce package see repo: [@SFDO-Community-Sprints/GrassRootsSurveySalesforcePackage](https://github.com/SFDO-Community-Sprints/GrassRootsSurveySalesforcePackage)
+
+For further information on the projects mobile app see repo: [@SFDO-Community-Sprints/GrassRootsMobileSurveyApp
+](https://github.com/SFDO-Community-Sprints/GrassRootsMobileSurveyApp)
 
 ## Setup
 1. Deploy this app to Heroku using above button.

@@ -4,7 +4,7 @@
   "repository": "https://github.com/SFDO-Community-Sprints/GrassRootsSurveyHerokuAuth0LoginApi",
   "env": {
     "SALESFORCE_LOGIN_URL": {
-      "description": "Salesforce Login URL.",
+      "description": "Salesforce Login URL. Leave it as is if you're using Developer Edition or Trailhead Playground.",
       "value": "https://login.salesforce.com"
     },
     "SALESFORCE_INTEGRATION_USERNAME": {

@@ -14,7 +14,7 @@ For further information on the projects mobile app see repo: [@SFDO-Community-Sp
 3. Create an integration user in your Salesforce org.
 4. Open the Heroku app setting and set config variables for the integration user.
 
-## API 
+## API Spec for Developers
 ### POST `/login`
 #### Request
 * Content-Type: `application/json`
@@ -34,6 +34,15 @@ For further information on the projects mobile app see repo: [@SFDO-Community-Sp
     "instance_url": "https://YOUR_INSTANCE_OR_DOMAIN.salesforce.com"
 }
 ```
+
+##### Error (400, Environment variable is not set correctly)
+```json
+{
+    "error": "invalid_environment_variable",
+    "error_description": "SALESFORCE_LOGIN_URL must end with '.salesforce.com'."
+}
+```
+
 ##### Error (403, Password realm is not setup yet)
 Make sure that password type grant is enabled in your default auth0 app setting.
 ```json

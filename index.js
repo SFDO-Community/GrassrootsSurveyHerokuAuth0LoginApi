@@ -21,6 +21,12 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
 app.post('/login', async (req, res, next) => {
+  if (!process.env.SALESFORCE_LOGIN_URL.endsWith('.salesforce.com')) {
+    res.status(400).send({
+      "error": "invalid_environment_variable",
+      "error_description": "SALESFORCE_LOGIN_URL must end with '.salesforce.com'."
+    });
+  }
   if (!req.body || !req.body.email || !req.body.password) {
     res.status(401).send({
       "error": "missing_required_fields",

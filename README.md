@@ -39,7 +39,7 @@ For further information on the projects mobile app see repo: [@SFDO-Community-Sp
 ```json
 {
     "error": "invalid_environment_variable",
-    "error_description": "SALESFORCE_LOGIN_URL must end with '.salesforce.com'."
+    "error_description": "SALESFORCE_LOGIN_URL must end with '.salesforce.com'. Contact your administrator to see Heroku setting."
 }
 ```
 

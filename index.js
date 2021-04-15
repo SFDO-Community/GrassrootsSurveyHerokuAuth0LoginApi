@@ -24,7 +24,7 @@ app.post('/login', async (req, res, next) => {
   if (!process.env.SALESFORCE_LOGIN_URL.endsWith('.salesforce.com')) {
     res.status(400).send({
       "error": "invalid_environment_variable",
-      "error_description": "SALESFORCE_LOGIN_URL must end with '.salesforce.com'."
+      "error_description": "SALESFORCE_LOGIN_URL must end with '.salesforce.com'. Contact your administrator to see Heroku setting."
     });
   }
   if (!req.body || !req.body.email || !req.body.password) {

@@ -1,12 +1,12 @@
-# Login API for Grass Roots Mobile Survey App
-Visit [our wiki](https://github.com/SFDO-Community-Sprints/GrassRootsMobileSurveyApp/wiki) for the project details and further setup instructions.
+# Login API for Grassroots Mobile Survey App
+Visit [our wiki](https://github.com/SFDO-Community-Sprints/GrassrootsMobileSurveyApp/wiki) for the project details and further setup instructions.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-For further information on the projects Salesforce package see repo: [@SFDO-Community-Sprints/GrassRootsSurveySalesforcePackage](https://github.com/SFDO-Community-Sprints/GrassRootsSurveySalesforcePackage)
+For further information on the projects Salesforce package see repo: [@SFDO-Community-Sprints/GrassrootsSurveySalesforcePackage](https://github.com/SFDO-Community-Sprints/GrassrootsSurveySalesforcePackage)
 
-For further information on the projects mobile app see repo: [@SFDO-Community-Sprints/GrassRootsMobileSurveyApp
-](https://github.com/SFDO-Community-Sprints/GrassRootsMobileSurveyApp)
+For further information on the projects mobile app see repo: [@SFDO-Community-Sprints/GrassrootsMobileSurveyApp
+](https://github.com/SFDO-Community-Sprints/GrassrootsMobileSurveyApp)
 
 ## Setup
 1. Deploy this app to Heroku using above button.

@@ -1,7 +1,7 @@
 {
-  "name": "Login API for Grass Roots Mobile Survey App",
-  "description": "Login API for Grass Roots Mobile Survey App", 
-  "repository": "https://github.com/SFDO-Community-Sprints/GrassRootsSurveyHerokuAuth0LoginApi",
+  "name": "Login API for Grassroots Mobile Survey App",
+  "description": "Login API for Grassroots Mobile Survey App", 
+  "repository": "https://github.com/SFDO-Community-Sprints/GrassrootsSurveyHerokuAuth0LoginApi",
   "env": {
     "SALESFORCE_LOGIN_URL": {
       "description": "Salesforce Login URL. Leave it as is if you're using Developer Edition or Trailhead Playground.",

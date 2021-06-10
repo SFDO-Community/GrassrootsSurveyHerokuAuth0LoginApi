@@ -63,10 +63,11 @@ async function createSalesforceConnection(res) {
       "instance_url": conn.instanceUrl,
     };
     res.send(response);
-  } catch (e) {
+  } catch (error) {
+    console.error(error);
     return Promise.reject({
       statusCode: 403,
-      message: `{"error":"invalid_salesforce_connection", "error_description":"${e.message}"}`,
+      message: `{"error":"invalid_salesforce_connection", "error_description":"${error.message}"}`,
     });
   }
 }
